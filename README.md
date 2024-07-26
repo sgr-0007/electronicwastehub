@@ -22,8 +22,6 @@ The application features needed are:
 Roles : Owner , Admin, Staff, Local trader(scan the qr and update the status from the table accordingly)
 
 
-Clone : https://git.shefcompsci.org.uk/com6103-2023-24/team06/project.git
-
 Client app :
 initial commands to execute after cloning :
 cd ewastehubclient
