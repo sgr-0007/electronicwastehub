@@ -1,0 +1,11 @@
+HELP.md
+**/target/
+.idea
+*.iml
+*.class
+#*Test.java
+#**/test/
+*.iws
+*.ipr
+settings.json
+ewaste.session.sql

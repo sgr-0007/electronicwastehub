@@ -1,0 +1,271 @@
+.App {
+  width: 100%;
+  background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+}
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .registerewaste-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+  }
+
+  .payment-container {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+
+  }
+  
+  .login-card {
+    width: 800px;
+    padding: 20px;
+    margin: 20px;
+
+  }
+  .registerewaste-card {
+    width: 600px;
+    height: 100vh;
+
+  }
+  .signup-center {
+    display: flex;
+    justify-content: center;
+    margin-top: .5rem; /* Adjust as needed */
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-title {
+  margin-top: 10px;
+}
+.active{
+  color:white;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;  /* Optional, to ensure full width */
+  z-index: 10;  /* Optional, to ensure the navbar is on top of other elements */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4caf50;
+  color:#949a8f;
+  top: 0;
+}
+
+nav .title {
+  font-size: 1.5rem;
+  margin: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #949a8f;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+ list-style: none; 
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #FFFFFFD9;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+}
+
+nav ul li a:not(.active):hover {
+  color:#478f08 ;
+}
+
+nav .menu {
+  display: none;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+}
+
+nav .menu span {
+  height: 0.4rem;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.2rem;
+}
+
+
+@media (max-width: 480px) {
+  nav .menu {
+      display: flex;
+  }
+
+  nav {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 0.25rem;
+  }
+
+  nav ul.open {
+      display: flex;
+  }
+
+  nav ul li {
+      width: 100%;
+      text-align: center;
+  }
+
+  nav ul li a {
+      margin: 0.2rem 0.5rem;
+  }
+  
+}
+.login-image-container {
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center;     /* Center the image vertically */
+}
+.form .card {
+  min-width: 450px;
+}
+.form .card form {
+  margin-top: 2rem;
+}
+.form .card .field {
+  margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 960px) {
+  .form .card {
+      width: 80%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .form .card {
+      width: 100%;
+      min-width: 0;
+  }
+}
+
+ .tab-content {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.tab-content.active {
+  opacity: 1;
+}
+
+.payment-container {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.payment-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.payment-button {
+  background-color: #3254a4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.stripe-payment-element {
+  /* Style the PaymentElement here */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+}
+.payment-button {
+  /* Style the button here */
+  background-color: #3254a4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.popup {
+  position: absolute;
+  top: 100%; /* Positioned below the "Sign In" link */
+  left: 0; /* Align to the left side (adjust as needed) */
+  width: 200px;
+  height: 150px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.popup button {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  padding: 5px 10px;
+  border: none; /* Remove default button border */
+  background-color: #f0f0f0; /* Light gray background */
+  cursor: pointer; /* Indicate hover interaction */
+}
+
+.popup button:hover {
+  background-color: #e0e0e0; /* Slightly darker hover effect */
+}
+.p-galleria .p-galleria-thumbnail-container {
+  background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+  padding: 1rem 0.25rem;
+}
+
+.p-galleria .p-galleria-thumbnail-container .p-galleria-thumbnail-prev, .p-galleria .p-galleria-thumbnail-container .p-galleria-thumbnail-next {
+  margin: 0.5rem;
+  background-color: transparent;
+  color:rgb(76, 175, 80);
+  width: 2rem;
+  height: 2rem;
+  transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+  border-radius: 50%;
+}
+
+

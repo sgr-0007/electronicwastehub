@@ -1,0 +1,36 @@
+server:
+  port: 9000
+
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3306/ewastehubdb?serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: millerfi566@gmail.com
+    password: igsmzrnutyndulaz
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+swagger:
+  config:
+    base-package: com.team.ewaste.controller
+
+logging:
+  level:
+    com.team.ewaste: debug
+
+stripe:
+  api:
+    key: sk_test_51P2Q9EP500Q7Bx19cUwoTRycA1qDo5dEaqcsLRn6FT8cElQ9dl4DMknCNeNZeungdSYsJxAupkXaZzFxc7Z1tRwt00RoMhvzqW
